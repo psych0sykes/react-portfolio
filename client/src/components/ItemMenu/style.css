@@ -1,0 +1,12 @@
+.itemMenu {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    justify-content: center;
+}
+.menuItem {
+    width: 125px;
+    height: 125px;
+    margin: 2.5vw;
+    text-align: center;
+}
