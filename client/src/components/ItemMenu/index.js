@@ -8,8 +8,12 @@ function ItemMenu(props) {
     // Pick Color
     // Change the colors in the color array!
     const colorArray = [
-        "#F8EA8C","#FF4500","#F4A843","#F7DE3D"
+        "#000000","#666666","#999999"
     ];
+    const colorfulArray = [
+        "#CFEBDF","#E2FADB","#DBEFBC","#9BC4CB"
+    ];
+
     var colorCount = 0;
     
     function pickColor(array) {
@@ -26,7 +30,9 @@ function ItemMenu(props) {
 
     const menuItems = props.items.map((item) => {
         return (
-            <div key={item.id} style={{backgroundColor: pickColor(colorArray)}} className='menuItem'>{item.title}</div>
+            <div key={item.id} style={{backgroundColor: pickColor(colorfulArray)}} className='menuItem'>
+                <p>{item.title}</p>
+            </div>
         );
     })
 
