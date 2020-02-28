@@ -15,6 +15,7 @@ function ItemMenu(props) {
         if(!menuHasMoved){
             console.log("moving");
             setMoveMenuClass("moveMenu");
+            props.show();
             setMenuHasMoved(true);
         }
         else{

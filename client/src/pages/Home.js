@@ -1,7 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ItemMenu from '../components/ItemMenu';
+import ItemDisplay from '../components/ItemDisplay';
 
 function Home(props) {
+
+    const [displayItem, setDisplayItem] = useState(false)
+
+    function Display(props) {
+        if(displayItem){
+            return <ItemDisplay/>
+        }
+        else{
+            return null
+        }
+    }
 
     const itemArray = [
         {
@@ -65,7 +77,8 @@ function Home(props) {
 
     return(
         <div>
-            <ItemMenu items={itemArray}/>
+            <Display show={displayItem}/>
+            <ItemMenu items={itemArray} show={() => setDisplayItem(true)}/>
         </div>
     )
 };
