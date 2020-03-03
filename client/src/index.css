@@ -1,3 +1,26 @@
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+a {
+    text-decoration: none;
+    color: orangered;
+}
+a:hover {
+    color: black;
+}
+button {
+    padding: 10px;
+    color: white;
+    background-color: #333333;
+    font-size: medium;
+    transition-duration: 0.2s;
+    border: 3px solid black;
+}
+button:hover {
+    color: orangered;
+    box-shadow: none;
+    background-color: white;
+}
+h1 {
+    margin: 10px;
+}

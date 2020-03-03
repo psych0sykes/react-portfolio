@@ -8,6 +8,6 @@
 }
 
 @keyframes moveMenu {
-    0% {top: 275px;}
+    0% {top: 150px;}
     100% {top: 525px;}
 }

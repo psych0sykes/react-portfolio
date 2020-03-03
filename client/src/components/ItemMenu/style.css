@@ -4,7 +4,7 @@
     padding-top: 10px;
     justify-content: center;
     position: absolute;
-    top: 275px;
+    top: 150px;
     left: 0;
     right: 0;
     margin: auto;
@@ -20,6 +20,9 @@
     text-align: center;
     align-content: center;
     box-shadow: 5px 5px #333333;
+}
+.menuItem:hover {
+    cursor: pointer;
 }
 .menuItem p {
     color: #333333;

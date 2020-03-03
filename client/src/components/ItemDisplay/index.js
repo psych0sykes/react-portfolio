@@ -11,6 +11,10 @@ function ItemDisplay(props) {
                 return <div className='colorIcon' style={{backgroundColor: props.itemColor}}>color</div>
         }
     }
+    
+    function openLink(url){
+        window.open(url, '_blank')
+    }
 
     return(
         <div className='ItemDisplay'>
@@ -20,7 +24,9 @@ function ItemDisplay(props) {
             <div className='itemContent'>
                 <h1>{props.item.title}</h1>
                 <p>{props.item.description}</p>
-                <a href={props.item.url}>{props.item.urlText}</a>
+                <button onClick={() => openLink(props.item.url)}>
+                    {props.item.urlText}
+                </button>
             </div>
         </div>
     )
