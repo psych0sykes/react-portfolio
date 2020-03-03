@@ -65,8 +65,6 @@ function Home(props) {
         {
             title: "about me",
             id: "aboutMe",
-            urlText: "",
-            url: "",
             description: "My name is Blake. I am a Full Stack Developer, Financial Analyst, and Musician. Be sure to look at my app divdiv, it's my best work. If you like music, listen to my music.",
             background: ["color"],
             index: 4

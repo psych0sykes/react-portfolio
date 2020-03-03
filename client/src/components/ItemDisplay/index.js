@@ -16,6 +16,19 @@ function ItemDisplay(props) {
         window.open(url, '_blank')
     }
 
+    function URLButton(props){
+
+        if(props.url){
+        return (
+            <button onClick={() => openLink(props.url)}>
+                {props.children}
+            </button>
+        )}
+        else{
+            return <div/>
+        }
+    }
+
     return(
         <div className='ItemDisplay'>
             <div className='itemIcon'>
@@ -24,9 +37,7 @@ function ItemDisplay(props) {
             <div className='itemContent'>
                 <h1>{props.item.title}</h1>
                 <p>{props.item.description}</p>
-                <button onClick={() => openLink(props.item.url)}>
-                    {props.item.urlText}
-                </button>
+                <URLButton url={props.item.url}>{props.item.urlText}</URLButton>
             </div>
         </div>
     )
