@@ -3,6 +3,25 @@
 }
 .itemIcon {
     width: 40%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+.imageIcon {
+    width: 25vw;
+    height: 25vw;
+    overflow: hidden;
+    border-radius: 10%;
+    border: 3px solid black;
+}
+.imageIcon img {
+    width: 25vw;
+}
+.colorIcon {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 10%;
 }
 .itemContent {
     width: 60%;

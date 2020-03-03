@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import ItemMenu from '../components/ItemMenu';
 import ItemDisplay from '../components/ItemDisplay';
+import subloserImage from '../images/subloser.JPG';
+import divdivImage from '../images/divdiv.jpg';
 
 function Home(props) {
 
@@ -32,7 +34,7 @@ function Home(props) {
             urlText: "check out the app",
             url: "https://divdiv.herokuapp.com/",
             description: "divdiv is a fundraising platform I built with React, Node, and MongoDB. Each time a user donates to a campaign, they get to add a colored div to the campaign canvas. Payments are processed throught the Stripe API. Go check it out! This is my favorite, and best app.",
-            background: ["image","divdiv"],
+            background: ["image",divdivImage],
             index: 0
         },
         {
@@ -59,7 +61,7 @@ function Home(props) {
             urlText: "subloser.com",
             url: "https://psych0sykes.github.io/subloser.com/",
             description: "I write, record, produce and perform music under the name subloser. My music is distrubted on Spotify, Apple Music and really everywhere you can stream music. Click on the link to go to my webstie!",
-            background: ["image","subloser"],
+            background: ["image", subloserImage],
             index: 3
         },
         {

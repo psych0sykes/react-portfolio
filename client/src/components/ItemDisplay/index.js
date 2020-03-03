@@ -6,9 +6,9 @@ function ItemDisplay(props) {
     function ImageOrColor(props){
         switch(props.icon){
             case 'image':
-                return <div className='imageIcon'>image</div>
+                return <div className='imageIcon'><img src={props.image}/></div>
             case 'color':
-                return <div className='colorIcon' style={{backgroundColor: props.itemColor}}>color</div>
+                return <div className='colorIcon' style={{backgroundColor: props.itemColor}}></div>
         }
     }
     
@@ -32,7 +32,7 @@ function ItemDisplay(props) {
     return(
         <div className='ItemDisplay'>
             <div className='itemIcon'>
-                <ImageOrColor icon={props.item.background[0]} itemColor={props.itemColor}/>
+                <ImageOrColor icon={props.item.background[0]} itemColor={props.itemColor} image={props.item.background[1]}/>
             </div>
             <div className='itemContent'>
                 <h1>{props.item.title}</h1>
