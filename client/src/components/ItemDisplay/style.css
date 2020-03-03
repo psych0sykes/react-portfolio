@@ -1,0 +1,9 @@
+.ItemDisplay {
+    display: flex;
+}
+.itemIcon {
+    width: 40%;
+}
+.itemContent {
+    width: 60%;
+}
