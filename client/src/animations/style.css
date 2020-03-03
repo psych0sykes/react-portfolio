@@ -1,5 +1,5 @@
 .moveMenu {
-    position: relative;
+    position: absolute;
     animation-name: moveMenu;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
@@ -8,6 +8,6 @@
 }
 
 @keyframes moveMenu {
-    0% {top: 0px;}
-    100% {top: 300px;}
+    0% {top: 275px;}
+    100% {top: 525px;}
 }

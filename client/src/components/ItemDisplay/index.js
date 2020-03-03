@@ -17,7 +17,11 @@ function ItemDisplay(props) {
             <div className='itemIcon'>
                 <ImageOrColor icon={props.item.background[0]} itemColor={props.itemColor}/>
             </div>
-            <div className='itemContent'>wow</div>
+            <div className='itemContent'>
+                <h1>{props.item.title}</h1>
+                <p>{props.item.description}</p>
+                <a href={props.item.url}>{props.item.urlText}</a>
+            </div>
         </div>
     )
 };
