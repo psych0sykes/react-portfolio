@@ -10,16 +10,17 @@ function ItemMenu(props) {
 
     const itemMenuClass = "itemMenu " + moveMenuClass;
     
-    function moveMenu(){
+    function moveMenu(id){
         console.log("move")
         if(!menuHasMoved){
             console.log("moving");
             setMoveMenuClass("moveMenu");
-            props.show();
+            props.show(id);
             setMenuHasMoved(true);
         }
         else{
             console.log("already moved")
+            props.show(id);
         }
     }
 
@@ -48,7 +49,7 @@ function ItemMenu(props) {
 
     const menuItems = props.items.map((item) => {
         return (
-            <div key={item.id} style={{backgroundColor: pickColor(colorfulArray)}} className='menuItem' onClick={moveMenu}>
+            <div key={item.id} style={{backgroundColor: pickColor(colorfulArray)}} className='menuItem' onClick={() => moveMenu(item.index)}>
                 <p>{item.title}</p>
             </div>
         );
