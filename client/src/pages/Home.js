@@ -6,21 +6,23 @@ function Home(props) {
 
     const [displayItem, setDisplayItem] = useState(false);
     const [itemIndex, setItemIndex] = useState();
+    const [itemColor, setItemColor] = useState('#333333');
 
     function Display(props) {
 
         if(displayItem){
-            return <ItemDisplay item={itemArray[itemIndex]}/>
+            return <ItemDisplay item={itemArray[itemIndex]} itemColor={itemColor}/>
         }
         else{
             return null
         }
     }
 
-    function Clicked(id) {
+    function Clicked(id, color) {
         console.log(id);
         setDisplayItem(true);
         setItemIndex(id);
+        setItemColor(color)
     }
 
     const itemArray = [
@@ -93,7 +95,7 @@ function Home(props) {
     return(
         <div>
             <Display show={displayItem}/>
-            <ItemMenu items={itemArray} show={(id) => Clicked(id)}/>
+            <ItemMenu items={itemArray} show={(id, color) => Clicked(id, color)}/>
         </div>
     )
 };
