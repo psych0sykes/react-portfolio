@@ -30,7 +30,8 @@ function ItemMenu(props) {
         "#000000","#666666","#999999"
     ];
     const colorfulArray = [
-        "#CFEBDF","#E2FADB","#DBEFBC","#9BC4CB"
+        // "#CFEBDF","#E2FADB","#DBEFBC","#9BC4CB" old green colors
+        "#e0c7ab","#c7c3bf","#ebddc0"
     ];
     
     var colorCount = 0;
@@ -47,12 +48,12 @@ function ItemMenu(props) {
         };
     };
 
-    const menuItems = props.items.map((item) => {
+    const menuItems = props.items.map((item,index) => {
 
         let newColor = pickColor(colorfulArray)
 
         return (
-            <div key={item.id} style={{backgroundColor: newColor}} className='menuItem' onClick={() => moveMenu(item.index, newColor)}>
+            <div key={item.id} style={{backgroundColor: newColor}} className='menuItem' onClick={() => moveMenu(index, newColor)}>
                 <p>{item.title}</p>
             </div>
         );

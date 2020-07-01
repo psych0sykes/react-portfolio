@@ -19,12 +19,13 @@
     align-items: center;
     text-align: center;
     align-content: center;
-    box-shadow: 5px 5px #333333;
+    box-shadow: 5px 5px #555555;
 }
 .menuItem:hover {
     cursor: pointer;
+    outline: 3px dotted orangered;
 }
 .menuItem p {
-    color: #333333;
+    color: white;
     font-size: 20px;
 }
