@@ -3,6 +3,7 @@ import ItemMenu from '../components/ItemMenu';
 import ItemDisplay from '../components/ItemDisplay';
 import subloserImage from '../images/subloser.JPG';
 import divdivImage from '../images/divdiv.jpg';
+import aepImage from '../images/aep.png';
 
 function Home(props) {
 
@@ -42,7 +43,7 @@ function Home(props) {
             urlText: "view the project",
             url: "https://projectaccountableenforcement.vercel.app/",
             description: "The Accountable Enforcement Project is a react app built with Next.js. I created the project as a resource to identify racism withing American law enforcement using data from a study conducted by the Bureau of Justice Statistics.",
-            background: ["color"]
+            background: ["image",aepImage]
         },
         {
             title: "click_this",
@@ -102,7 +103,7 @@ function Home(props) {
             title: "resume",
             id: "resume",
             urlText: "view my resume",
-            url: "https://drive.google.com/file/d/1xvg0Ak8Wv-NRAl3eadI5p1HkzkL6LsD7/view?usp=sharing",
+            url: "https://drive.google.com/file/d/1liClTdUKnaO_VSg2IecL2T4ilHQHXT5c/view?usp=sharing",
             description: "Click the link below to see a fresh copy of my resume.",
             background: ["color"],
         }

@@ -20,10 +20,11 @@
     text-align: center;
     align-content: center;
     box-shadow: 5px 5px #555555;
+    border-radius: 10%;
 }
 .menuItem:hover {
     cursor: pointer;
-    outline: 3px dotted orangered;
+    box-shadow: 5px 5px orangered;
 }
 .menuItem p {
     color: white;
