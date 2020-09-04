@@ -4,6 +4,7 @@ import ItemDisplay from '../components/ItemDisplay';
 import subloserImage from '../images/subloser.JPG';
 import divdivImage from '../images/divdiv.jpg';
 import aepImage from '../images/aep.png';
+import mortgageCalculatorImage from '../images/mcimg.png';
 
 function Home(props) {
 
@@ -36,6 +37,14 @@ function Home(props) {
             url: "https://divdiv.herokuapp.com/",
             description: "divdiv is a fundraising platform I built with React, Node, and MongoDB. Each time a user donates to a campaign, they get to add a colored div to the campaign canvas. User authentication through Passport.js and payments processing throught the Stripe API. Go check it out!",
             background: ["image",divdivImage],
+        },
+        {
+            title: "mortgage calculator",
+            id: "mortgageCalculator",
+            urlText: "try it out!",
+            url: "https://mortgage-calculator-bsykes.vercel.app/",
+            description: "A next.js react app I built to calculate mortgage payments, and home affordability; tying my professionl experience in the mortgage industry into my software portfolio.",
+            background: ["image",mortgageCalculatorImage],
         },
         {
             title: "accountable enforcement project",
